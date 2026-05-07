@@ -1,0 +1,55 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+*.egg-info/
+*.egg
+.eggs/
+dist/
+build/
+
+# Tooling caches
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Editors / OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*~
+
+# Direnv
+.direnv/
+
+# Project-local
+scratch/**
+!scratch/.gitkeep
+.env
+.env.local
+
+# Heavy assets (linked-only policy)
+Resources/**
+!Resources/README.md
+!Resources/.gitkeep
+
+# Models / data caches
+*.gguf
+*.safetensors
+*.bin
+data/cache/
+data/raw/
+.ollama/
+.sid-identity
+.envrc
