@@ -1,0 +1,26 @@
+[project]
+name = "phase-06-production"
+version = "0.1.0"
+description = "Production AI engineering: serving, containers, observability, CI/CD, deployment."
+requires-python = ">=3.13"
+dependencies = [
+    "common",
+    "fastapi>=0.115",
+    "uvicorn[standard]>=0.32",
+    "pydantic>=2.10",
+    "pydantic-settings>=2.7",
+    "httpx>=0.28",
+    "structlog>=24.4",
+    "opentelemetry-api>=1.28",
+    "opentelemetry-sdk>=1.28",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv.sources]
+common = { workspace = true }
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/phase_06_production"]
