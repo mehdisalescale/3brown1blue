@@ -1,0 +1,25 @@
+[project]
+name = "phase-03-deep-learning"
+version = "0.1.0"
+description = "Deep learning with PyTorch: CNNs, RNNs, training discipline, real data pipelines."
+requires-python = ">=3.13"
+dependencies = [
+    "common",
+    "numpy>=2.1",
+    "matplotlib>=3.9",
+    "torch>=2.5",
+    "torchvision>=0.20",
+    "datasets>=3.1",
+    "ipykernel>=6.29",
+    "tqdm>=4.66",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv.sources]
+common = { workspace = true }
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/phase_03_deep_learning"]
