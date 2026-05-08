@@ -1,0 +1,23 @@
+[project]
+name = "phase-01-math"
+version = "0.1.0"
+description = "Math intuition: linear algebra, calculus, gradients, probability — the foundation for everything else."
+requires-python = ">=3.13"
+dependencies = [
+    "common",
+    "numpy>=2.1",
+    "matplotlib>=3.9",
+    "scipy>=1.14",
+    "ipykernel>=6.29",
+    "ipywidgets>=8.1",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv.sources]
+common = { workspace = true }
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/phase_01_math"]
