@@ -11,7 +11,10 @@ from pathlib import Path
 
 
 def _repo_root() -> Path:
-    """Walk up from this file to the workspace root (the dir containing pyproject.toml with [tool.uv.workspace])."""
+    """Walk up from this file to the workspace root.
+
+    The workspace root is the directory containing pyproject.toml with [tool.uv.workspace].
+    """
     here = Path(__file__).resolve()
     for parent in here.parents:
         candidate = parent / "pyproject.toml"
