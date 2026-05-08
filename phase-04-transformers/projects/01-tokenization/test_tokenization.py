@@ -1,0 +1,8 @@
+"""Test stub for tokenization — replace xfail with real tests as you build."""
+
+import pytest
+
+
+@pytest.mark.xfail(reason="not yet implemented")
+def test_tokenization_placeholder() -> None:
+    raise NotImplementedError
