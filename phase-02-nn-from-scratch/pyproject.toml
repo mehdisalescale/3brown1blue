@@ -1,0 +1,21 @@
+[project]
+name = "phase-02-nn-from-scratch"
+version = "0.1.0"
+description = "Neural networks from scratch in NumPy: perceptron, MLP, autograd, optim zoo."
+requires-python = ">=3.13"
+dependencies = [
+    "common",
+    "numpy>=2.1",
+    "matplotlib>=3.9",
+    "ipykernel>=6.29",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv.sources]
+common = { workspace = true }
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/phase_02_nn_from_scratch"]

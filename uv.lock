@@ -11,6 +11,7 @@ resolution-markers = [
 members = [
     "common",
     "phase-01-math",
+    "phase-02-nn-from-scratch",
     "threebrown-oneblue",
 ]
 
@@ -1533,6 +1534,25 @@ requires-dist = [
     { name = "matplotlib", specifier = ">=3.9" },
     { name = "numpy", specifier = ">=2.1" },
     { name = "scipy", specifier = ">=1.14" },
+]
+
+[[package]]
+name = "phase-02-nn-from-scratch"
+version = "0.1.0"
+source = { editable = "phase-02-nn-from-scratch" }
+dependencies = [
+    { name = "common" },
+    { name = "ipykernel" },
+    { name = "matplotlib" },
+    { name = "numpy" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "common", editable = "common" },
+    { name = "ipykernel", specifier = ">=6.29" },
+    { name = "matplotlib", specifier = ">=3.9" },
+    { name = "numpy", specifier = ">=2.1" },
 ]
 
 [[package]]
