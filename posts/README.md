@@ -35,4 +35,4 @@ Tone tags: `intuition` (something clicked), `confusion` (admitting a wrong turn)
 
 | Date | Title | Phase | Projects | Status |
 |---|---|---|---|---|
-| _(empty — write your first post)_ | | | | |
+| 2026-05-07 | [Reading 3Blue1Brown is not the same as doing it](2026-05-07-why-3brown1blue.md) | 0 | — | draft |
