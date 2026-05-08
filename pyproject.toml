@@ -1,0 +1,78 @@
+[project]
+name = "threebrown-oneblue"
+version = "0.0.1"
+description = "A self-driven, learn-in-public path from math intuition to production AI engineering."
+requires-python = ">=3.13"
+dependencies = []
+
+[tool.uv.workspace]
+members = [
+    "common",
+    "phase-01-math",
+    "phase-02-nn-from-scratch",
+    "phase-03-deep-learning",
+    "phase-04-transformers",
+    "phase-05-llm-systems",
+    "phase-06-production",
+]
+
+[tool.uv]
+dev-dependencies = [
+    "pytest>=8.3",
+    "pytest-cov>=5.0",
+    "ruff>=0.7",
+    "mypy>=1.13",
+    "pre-commit>=4.0",
+    "jupyter>=1.1",
+    "jupyterlab>=4.3",
+    "ipykernel>=6.29",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py313"
+extend-exclude = [
+    "**/.ipynb_checkpoints",
+    "scratch",
+    "Resources",
+]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "N", "SIM", "RET", "PT"]
+ignore = []
+
+[tool.ruff.lint.per-file-ignores]
+"**/test_*.py" = ["F401"]
+"**/notebooks/**" = ["E402"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+
+[tool.mypy]
+python_version = "3.13"
+strict = false
+ignore_missing_imports = true
+exclude = [
+    "scratch",
+    "Resources",
+    "\\.ipynb_checkpoints",
+]
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+addopts = "-ra --strict-markers --strict-config"
+testpaths = [
+    "common/tests",
+    "phase-04-transformers/projects",
+    "phase-04-transformers/tests",
+    "phase-05-llm-systems/projects",
+    "phase-05-llm-systems/tests",
+    "phase-06-production/projects",
+    "phase-06-production/tests",
+]
+python_files = ["test_*.py"]
+markers = [
+    "slow: marks tests as slow (deselect with '-m \"not slow\"')",
+    "gpu: requires a GPU/MPS-capable accelerator",
+]
