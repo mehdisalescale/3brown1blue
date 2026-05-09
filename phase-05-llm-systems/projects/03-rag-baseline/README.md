@@ -2,6 +2,10 @@
 
 RAG over a small corpus with local embeddings + chroma.
 
+## Recommended corpus
+
+The *Mathematics for Machine Learning* book extraction at `/Users/bm/ML/Resources/Pdfs/mml-book.extracted/` (text + 105 figures + 176 theorems / 140 examples) is a dense, math-heavy testbed — much better than blog transcripts. See `../../../Resources/extracted-mml-notes.md` for layout. **Caveat:** `pdftotext` flattens math symbols; if equation-level retrieval matters, run Nougat over the PDF first for LaTeX-grade text.
+
 ## What
 
 _(one sentence: what is being built)_

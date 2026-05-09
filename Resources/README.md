@@ -14,7 +14,7 @@ Append a row to the table below. Keep slugs stable so projects' `SOURCES.md` fil
 
 | Slug | Title | Author(s) | Where to acquire | Used by phase |
 |---|---|---|---|---|
-| `mml-book` | Mathematics for Machine Learning | Deisenroth, Faisal & Ong | Free PDF: mml-book.com | 1 |
+| `mml-book` | Mathematics for Machine Learning | Deisenroth, Faisal & Ong | Free PDF: mml-book.com — **already extracted at `/Users/bm/ML/Resources/Pdfs/mml-book.extracted/`** (TOC, text reading-flow + layout, 105 images, ~13 MB total). See [`extracted-mml-notes.md`](extracted-mml-notes.md) for layout. | 1 (primary), 5 (RAG corpus) |
 | `nielsen-dl` | Neural Networks and Deep Learning | Michael Nielsen | Free online: neuralnetworksanddeeplearning.com | 2 |
 | `goodfellow-dl` | Deep Learning | Goodfellow, Bengio & Courville | Free online: deeplearningbook.org | 3 |
 | `raschka-pytorch` | Machine Learning with PyTorch and Scikit-Learn | Sebastian Raschka | Publisher / library | 3 |

@@ -40,9 +40,11 @@ scratch/**
 .env.local
 
 # Heavy assets (linked-only policy)
+# Ignore all binaries / PDFs / images; allow tracked markdown notes about resources.
 Resources/**
 !Resources/README.md
 !Resources/.gitkeep
+!Resources/*.md
 
 # Models / data caches
 *.gguf
