@@ -4,7 +4,7 @@ date: 2026-05-07
 phase: 0
 projects: []
 tags: [meta]
-status: draft
+status: published
 ---
 
 ## What I was trying to do

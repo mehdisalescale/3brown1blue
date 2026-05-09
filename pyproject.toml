@@ -44,6 +44,8 @@ ignore = []
 [tool.ruff.lint.per-file-ignores]
 "**/test_*.py" = ["F401"]
 "**/notebooks/**" = ["E402"]
+# Math notebooks: allow capital names (M, I, X, etc.) and out-of-order imports.
+"**/*.ipynb" = ["E402", "E741", "N803", "N806", "N816"]
 
 [tool.ruff.format]
 quote-style = "double"
